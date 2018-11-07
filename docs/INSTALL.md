@@ -111,7 +111,7 @@ Give webserver user (www-data, wwwrun, apache or nginx) permissions to execute i
 www-data ALL=(intelmq) NOPASSWD: /usr/local/bin/intelmqctl
 ```
 
-The default way of accessing `intelmqctl` program is by command `sudo -u intelmq /usr/local/bin/intelmqctl`. If that does not suit you, you may set an environmental variable   `INTELMQ_MANGER_CONTROLER_CMD` to I.E. `~/.local/bin/intelmqctl` or `PATH=~/.local/bin intelmqctl` or `sudo -u intelmq ~/.local/bin/intelmqctl` or whatever you need.
+The default way of accessing `intelmqctl` program is by command `intelmq /usr/local/bin/intelmqctl`. If that does not suit you, you may set an environmental variable   `INTELMQ_MANGER_CONTROLER_CMD` to I.E. `~/.local/bin/intelmqctl` or `PATH=~/.local/bin intelmqctl` or `intelmq ~/.local/bin/intelmqctl` or whatever you need.
 
 ### Notes on CentOS / RHEL
 
