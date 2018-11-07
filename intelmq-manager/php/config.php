@@ -10,7 +10,7 @@
         'positions' => '/opt/intelmq/etc/manager/positions.conf',
     );
     if(!($c = getenv("INTELMQ_MANGER_CONTROLER_CMD"))) {
-        $c = "/usr/local/bin/intelmqctl";
+        $c = "/usr/bin/intelmqctl";
     }
     $CONTROLLER_JSON = $c." --type json %s";
     $CONTROLLER = $c." %s";

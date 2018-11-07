@@ -108,10 +108,10 @@ chmod g+w /opt/intelmq/etc/*.conf /opt/intelmq/etc/manager/positions.conf
 
 Give webserver user (www-data, wwwrun, apache or nginx) permissions to execute intelmqctl as intelmq user. Edit the `/etc/sudoers` file and add the adapted following line:
 ```javascript
-www-data ALL=(intelmq) NOPASSWD: /usr/local/bin/intelmqctl
+www-data ALL=(intelmq) NOPASSWD: /usr/bin/intelmqctl
 ```
 
-The default way of accessing `intelmqctl` program is by command `/usr/local/bin/intelmqctl`. If that does not suit you, you may set an environmental variable   `INTELMQ_MANGER_CONTROLER_CMD` to I.E. `~/.local/bin/intelmqctl` or `PATH=~/.local/bin intelmqctl` or `intelmq ~/.local/bin/intelmqctl` or whatever you need.
+The default way of accessing `intelmqctl` program is by command `/usr/bin/intelmqctl`. If that does not suit you, you may set an environmental variable   `INTELMQ_MANGER_CONTROLER_CMD` to I.E. `~/.local/bin/intelmqctl` or `PATH=~/.local/bin intelmqctl` or `intelmq ~/.local/bin/intelmqctl` or whatever you need.
 
 ### Notes on CentOS / RHEL
 

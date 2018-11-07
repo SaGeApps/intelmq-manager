@@ -25,7 +25,7 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 +        'positions' => '/etc/intelmq/manager/positions.conf',
      );
      if(!($c = getenv("INTELMQ_MANGER_CONTROLER_CMD"))) {
--        $c = "/usr/local/bin/intelmqctl";
+-        $c = "/usr/bin/intelmqctl";
 +        $c = "/usr/bin/intelmqctl";
      }
      $CONTROLLER = $c." --type json %s";
