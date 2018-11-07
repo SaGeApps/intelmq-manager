@@ -1,13 +1,13 @@
 <?php
 
     $FILES = array(
-        'bots' 		=> '/opt/intelmq/etc/BOTS',
-        'defaults' 	=> '/opt/intelmq/etc/defaults.conf',
-        'harmonization' => '/opt/intelmq/etc/harmonization.conf',
-        'pipeline' 	=> '/opt/intelmq/etc/pipeline.conf',
-        'runtime' 	=> '/opt/intelmq/etc/runtime.conf',
-        'system' 	=> '/opt/intelmq/etc/system.conf',
-        'positions' => '/opt/intelmq/etc/manager/positions.conf',
+        'bots' 		=> '/etc/intelmq/BOTS',
+        'defaults' 	=> '/etc/intelmq/defaults.conf',
+        'harmonization' => '/etc/intelmq/harmonization.conf',
+        'pipeline' 	=> '/etc/intelmq/pipeline.conf',
+        'runtime' 	=> '/etc/intelmq/runtime.conf',
+        'system' 	=> '/var/www/html/intelmq-manager/debian/intelmq.conf',
+        'positions' => '/var/www/html/intelmq-manager/debian/positions.conf',
     );
     if(!($c = getenv("INTELMQ_MANGER_CONTROLER_CMD"))) {
         $c = "/usr/bin/intelmqctl";
