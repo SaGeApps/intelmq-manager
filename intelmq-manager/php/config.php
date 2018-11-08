@@ -6,8 +6,7 @@
         'harmonization' => '/etc/intelmq/harmonization.conf',
         'pipeline' 	=> '/etc/intelmq/pipeline.conf',
         'runtime' 	=> '/etc/intelmq/runtime.conf',
-        'system' 	=> '/var/www/html/intelmq-manager/debian/intelmq.conf',
-        'positions' => '/var/www/html/intelmq-manager/debian/positions.conf',
+        'positions' => '/var/www/html/intelmq-manager/debian/positions.conf'
     );
     if(!($c = getenv("INTELMQ_MANGER_CONTROLER_CMD"))) {
         $c = "/usr/bin/intelmqctl";
